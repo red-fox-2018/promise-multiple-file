@@ -3,6 +3,7 @@ var sleep = require('sleep');
 
 function readFilePromise(pathFile) {
   // psst, the promise should be around here...
+  sleep.sleep(5)
   return new Promise((resolve, reject) => {
     fs.readFile(pathFile, 'utf-8', (err, data) => {
       if (!err) {
@@ -50,5 +51,5 @@ matchParentsWithChildrens('./parents.json', './childrens.json');
 console.log("Notification : Data sedang diproses !");
 
 // for Release 2
-matchParentsWithChildrens('./parents.json', './not_a_real_file.json');
-matchParentsWithChildrens('./not_a_real_file.json', './also_not_a_real_file.json');
+// matchParentsWithChildrens('./parents.json', './not_a_real_file.json');
+// matchParentsWithChildrens('./not_a_real_file.json', './also_not_a_real_file.json');
