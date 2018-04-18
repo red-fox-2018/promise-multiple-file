@@ -38,7 +38,7 @@ function matchParentsWithChildrens(parentFileName, childrenFileName) {
     console.log(parent)
   })
   .catch(err=>{
-    console.log('error found: ',err)
+    console.log('Terjadi error pada proses pembacaan data',err)
   })
 
 }
