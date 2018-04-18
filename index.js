@@ -35,9 +35,12 @@ function matchParentsWithChildrens(parentFileName, childrenFileName) {
         }
         console.log(parents);
     })
+    .catch (errorChildrensFile =>{
+      console.log(errorChildrensFile);
+    })
   })
-  .catch (error =>{
-    console.log(error);
+  .catch (errorParentsFile =>{
+    console.log(errorParentsFile);
   })
 }
 
